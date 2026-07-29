@@ -1,16 +1,51 @@
 /* Styles for Mobile devices */
+.body-section {
+  background-color: var(--background-color-header);
+}
+
+.header-section-container{
+  display: flex;
+  align-items: center;
+  padding: 60px 20px 20px;
+  justify-content: space-between;
+}
+
 .legal-wraper {
   color: var(--color-secondary);
-  padding-top: 52px;
+  padding-top: 28px;
+  padding-bottom: 0;
   padding-bottom: 120px;
+}
+
+.header-section {
+  display: flex;
+  width: 375px;
+  height: 128px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-text {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 129%;
+  color: var(--text-white);
 }
 
 .back-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
-  width: 100%;
+  margin: 0 auto;   
   height: 48px;
   text-align: center;
   border-radius: 16px;
@@ -19,6 +54,8 @@
   font-size: 20px;
   color: var(--color-secondary);
   background-color: var(--background-color-button);
+  width: 48px;
+  text-decoration: none;
 } 
 
 .back-text {
@@ -43,6 +80,7 @@
   .legal-wraper {
     padding-top: 48px;
     padding-bottom: 120px;
+    padding-bottom: 0;
   }
 
   .legal-title {
