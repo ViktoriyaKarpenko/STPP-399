@@ -50,8 +50,9 @@ h3,
 h4,
 a {
   font-family: 'Fredoka', sans-serif;
+  font-weight: 600;
 }
-.section-title {
+.section-tag {
   display: block;
   width: fit-content;
   padding: 3px 16px;
@@ -65,7 +66,7 @@ a {
   margin: 0 auto;
 }
 
-.section-subtitle {
+.section-title {
   text-align: center;
   font-weight: 600;
   font-size: 40px;
