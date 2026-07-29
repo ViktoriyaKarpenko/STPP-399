@@ -1,11 +1,11 @@
 {
-  "name": "evpl_vite_template",
+  "name": "STPP-399",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/evpl_vite_template/",
+    "build": "vite build --base=/STPP-399/",
     "preview": "vite preview",
     "build:preview": "vite build && vite preview"
   },
@@ -21,6 +21,8 @@
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "modern-normalize": "^3.0.1",
+    "swiper": "^14.0.7",
     "vite-plugin-full-reload": "^1.2.0",
     "vite-plugin-html-inject": "^1.1.2"
   }
