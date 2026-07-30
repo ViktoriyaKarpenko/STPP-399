@@ -20,7 +20,7 @@ html {
 
 body {
   font-family: 'Quicksand', sans-serif;
-  background-color: var(--background-color-additional);
+  background-color: var(--background-color-main);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -40,7 +40,7 @@ main {
   padding-top: 124px;
 }
 
-section {
+.section {
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -76,7 +76,7 @@ a {
 
 .google-play-link {
   display: block;
-  width: 100%;
+  max-width: 196px;
   padding: 12px 16px;
   border-radius: 16px;
   text-align: center;
@@ -87,8 +87,12 @@ a {
 }
 
 @media only screen and (min-width: 1440px) {
+  html {
+    scroll-padding-top: 95px;
+  }
+
   main {
-    padding-top: 96px;
+    padding-top: 94px;
   }
 
   section {
