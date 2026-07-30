@@ -15,14 +15,64 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body class="body-section">
-    <header>
-      <div class="header-section-container container">
-        <nav class="header-nav">
-          <a class="logo" href="./index.html">
-            <img class="logo-img" src="./img/favicon/img-favicon.png" alt="logo">
-            <span class="logo-text">Pirate Match</span>
-          </a>
-        </nav>
+    <header class="header">
+      <div class="container wrapper">
+        <a class="logo" href="./index.html" aria-label="Site logo">
+          <svg width="48" height="36">
+            <use href="./img/sprite.svg#icon-logo"></use>
+          </svg>
+          Pirate Match
+        </a>
+        <div class="burger-wrapper">
+          <button type="button" class="burger-btn" data-action="open">
+            <svg width="44" height="44">
+              <use href="./img/sprite.svg#icon-burger"></use>
+            </svg>
+          </button>
+        
+          <div class="burger" data-visible="close">
+            <div class="burger-menu">
+              <div class="burger-content">
+                <ul class="burger-nav-list">
+                  <li class="burger-nav-item">
+                    <a class="burger-nav-link" href="#about" data-menu-link>
+                      About
+                    </a>
+                  </li>
+                  <li class="burger-nav-item">
+                    <a class="burger-nav-link" href="#gameplay" data-menu-link>
+                      Gameplay
+                    </a>
+                  </li>
+                  <li class="burger-nav-item">
+                    <a class="burger-nav-link" href="#gallery" data-menu-link>
+                      Gallery
+                    </a>
+                  </li>
+                  <li class="burger-nav-item">
+                    <a class="burger-nav-link" href="#reviews" data-menu-link>
+                      Reviews
+                    </a>
+                  </li>
+                  <li class="burger-nav-item">
+                    <a class="burger-nav-link" href="#download" data-menu-link>
+                      Why Download
+                    </a>
+                  </li>
+                </ul>
+                <a class="google-play-link" target="_blank"
+                  href="https://play.google.com/store/apps/details?id=com.tactilegames.piratematch&hl=en&gl=us">
+                  Play on Google Play
+                </a>
+              </div>
+              <button type="button" class="btn-close" data-action="close">
+                <svg width="16" height="16" class="icon">
+                  <use href="./img/sprite.svg#icon-close"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
         <a class="back-link" href="./index.html">
           <svg class="swiper-icon" width="16" height="16">
             <use href="./img/sprite.svg#icon-swiper" width="16" height="16"></use>
@@ -33,9 +83,11 @@
     </header>
     <main>
         <div class="container legal-wraper">
-        <h1 class="legal-title">Privacy Policy</h1>
-        <p>WE ARE SERIOUS ABOUT PROTECTING YOUR IDENTITY AND THE PERSONAL INFORMATION YOU SHARE WITH US. OUR PRIVACY POLICY APPLIES
+        <h1 class="legal-title-elem">Privacy Policy</h1>
+        <p class="legal-subtitle individual">WE ARE SERIOUS ABOUT PROTECTING YOUR IDENTITY AND THE PERSONAL INFORMATION YOU SHARE WITH US. OUR PRIVACY POLICY APPLIES
         TO THE PERSONAL INFORMATION WE COLLECT THROUGH OUR WEBSITE AT urbangarden.pro. PLEASE READ THROUGH IT.
+        </p>
+        <p class="legal-subtitle">
         At Pirate Match and its affiliates ("Company"), respect for our users has the utmost importance. We understand your
         concerns about privacy, so we have posted this privacy policy to inform you what personal information we collect, how it
         is treated, what choices you have regarding our use of your personal information, and how you may access your personal
@@ -50,15 +102,15 @@
         </p>
         </div>
         <div class="container legal-wraper">
-        <h2>COLLECTION AND USE OF PERSONAL INFORMATION</h2>
-        <p>You can browse on our Website without giving us any personal information.
+        <h2 class="legal-title">COLLECTION AND USE OF PERSONAL INFORMATION</h2>
+        <p class="legal-subtitle">You can browse on our Website without giving us any personal information.
         We may collect personal information when you:
         </p>
         <ul>
-          <li>Browse our website, automatically;</li>
-          <li>Apply for employment;</li>
+          <li> ● Browse our website, automatically;</li>
+          <li> ● Apply for employment;</li>
         </ul>
-        <p>which personal information may be recorded by the standard operation of the Internet servers on which our Website is
+        <p class="legal-subtitle">which personal information may be recorded by the standard operation of the Internet servers on which our Website is
         hosted.
         Employment Opportunities at Company: We may advertise employment opportunities on our Website. In connection with a job
         application or related inquiry, you may provide us with certain personal information about yourself (such as that
@@ -67,8 +119,8 @@
         </p>
         </div>
         <div class="container legal-wraper">
-        <h2>DISCLOSURE OF PERSONAL INFORMATION</h2>
-        <p>Except as otherwise set out herein, we will not disclose, trade, rent, sell or otherwise transfer personal information
+        <h2 class="legal-title">DISCLOSURE OF PERSONAL INFORMATION</h2>
+        <p class="legal-subtitle">Except as otherwise set out herein, we will not disclose, trade, rent, sell or otherwise transfer personal information
         about our visitors to any third party without consent.
         Service Providers: We may transfer your personal information to third parties who provide services on our behalf, such
         as host our Web site, send email or other communications on our behalf or analyze our advertising effectiveness. Your
@@ -83,16 +135,16 @@
         </p>
         </div>
         <div class="container legal-wraper">
-        <h2>WEBSITE INFORMATION</h2>
-        <p>When you visit our Website, we collect the Internet Protocol address of all visitors to our Website and related
+        <h2 class="legal-title">WEBSITE INFORMATION</h2>
+        <p class="legal-subtitle">When you visit our Website, we collect the Internet Protocol address of all visitors to our Website and related
         information such as the Internet browser you are using, the computer operating system you are using, time spent visiting
         the Web site, usage patterns within the Web site, and the domain name of the web site from which you linked to our site.
         We collect this information to help us understand and improve your experience on the Website.
         </p>
         </div>
         <div class="container legal-wraper">
-        <h2>COOKIES AND WEB BEACONS</h2>
-        <p>Our Website uses a technology called "cookies". A cookie is a tiny element of data that our Website can send to your
+        <h2 class="legal-title">COOKIES AND WEB BEACONS</h2>
+        <p class="legal-subtitle">Our Website uses a technology called "cookies". A cookie is a tiny element of data that our Website can send to your
         browser, which may then be stored on your hard drive so we can recognize you when you return. We use cookies on the
         pages on our Website where you are prompted to log in or that are customizable. If you have registered with our Website,
         these cookies help us identify you and may be necessary to provide you with products or services you request. Cookies
@@ -107,8 +159,8 @@
         </p>
         </div>
         <div class="container legal-wraper">
-        <h2>SECURITY OF PERSONAL INFORMATION</h2>
-        <p>We realize that our visitors trust us to protect their personal information. We take that task seriously. We have
+        <h2 class="legal-title">SECURITY OF PERSONAL INFORMATION</h2>
+        <p class="legal-subtitle">We realize that our visitors trust us to protect their personal information. We take that task seriously. We have
         implemented measures in an effort to safeguard the personal information in our custody and control, including only
         providing access to personal information to employees and authorized service providers who require such information for
         the purposes described in this Privacy Policy. We maintain reasonable administrative, technical and physical safeguards
@@ -120,8 +172,8 @@
         </p>
         </div>
         <div class="container legal-wraper">
-        <h2>RETENTION OF PERSONAL INFORMATION</h2>
-        <p>Your personal information will be retained until the purpose for which it was collected is fulfilled (subject to the
+        <h2 class="legal-title">RETENTION OF PERSONAL INFORMATION</h2>
+        <p class="legal-subtitle">Your personal information will be retained until the purpose for which it was collected is fulfilled (subject to the
         legal time limit or retention schedule) and for a maximum period of three (3) years after the end of your relationship
         with Company, if any. If we collect your IP address, it will only be stored for the duration of your use of our Website
         and then deleted immediately or anonymized by shortening.
@@ -131,30 +183,30 @@
         </p>
         </div>
         <div class="container legal-wraper">
-        <h2>USE OF SOCIAL MEDIA AND SOCIAL NETWORKS</h2>
-        <p>We encourage you to review your privacy options and settings with social media platforms and networks you use to
+        <h2 class="legal-title">USE OF SOCIAL MEDIA AND SOCIAL NETWORKS</h2>
+        <p class="legal-subtitle">We encourage you to review your privacy options and settings with social media platforms and networks you use to
         understand what choices you have about sharing information from those platforms and networks with us. If necessary, you
         can update your preferences to reflect your usage.
         </p>
         </div>
         <div class="container legal-wraper">
-        <h2>ABOUT CHILDREN
+        <h2 class="legal-title">ABOUT CHILDREN
         Children Under 13</h2>
-        <p>You can browse our Web site. You cannot use any service that asks for personal information. Our site is not designed for
+        <p class="legal-subtitle">You can browse our Web site. You cannot use any service that asks for personal information. Our site is not designed for
         children. We do not wish to collect personal information from children under 13. This policy is designed to protect
         children.
         </p>
         </div>
         <div class="container legal-wraper">
-        <h2>CHANGES TO OUR PRIVACY POLICY</h2>
-        <p>This Privacy Policy may be updated periodically to reflect changes to our personal information practices. The revised
+        <h2 class="legal-title">CHANGES TO OUR PRIVACY POLICY</h2>
+        <p class="legal-subtitle">This Privacy Policy may be updated periodically to reflect changes to our personal information practices. The revised
         Privacy Policy will be posted on the Website. We will treat your personal information in accordance with the Privacy
         Policy in place at the time of collection of such information, or as you otherwise consent.
         </p>
         </div>
-        <div class="container legal-wraper">
-        <h2>CONTACT US</h2>
-        <p>You may contact us at any time using the contact information below in the following cases: if you have any questions or
+        <div class="container legal-wraper last-element">
+        <h2 class="legal-title">CONTACT US</h2>
+        <p class="legal-subtitle">You may contact us at any time using the contact information below in the following cases: if you have any questions or
         comments about this Privacy Policy; if you wish to access, update, and/or correct inaccuracies in our records of your
         personal information; if you wish to delete your personal data; if you have a complaint about how we handle your
         personal information.
