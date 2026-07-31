@@ -1,4 +1,53 @@
 /* Styles for Mobile devices */
+.container.container-download {
+    text-align: center;
+    align-items: center;
+}
+
+.download-title {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 120%;
+    text-align: center;
+    color: var(--color-secondary);
+    padding: 24px 0;
+}
+
+.download-dscr {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    text-align: center;
+    color: var(--color-secondary);
+    padding-bottom: 24px;
+}
+
+.google-play-link.download-link{
+    cursor: pointer;
+    /* z-index: 2; */
+    margin: 0 69.5px;
+}
+
+/* .download-octopus {
+    position: absolute;
+    right: 5px;
+    bottom: -44px;
+    z-index: 3;
+} */
+/* .footer.footer-downland {
+    z-index: 1;
+    overflow: hidden;
+}  */
 /* Styles for Desktop devices */
-/*@media only screen and (min-width: 1440px) {
-}*/
+@media only screen and (min-width: 1440px) {
+   
+
+   .download-title {
+      width: 612px;
+      margin: 0 294px;
+   }
+
+   .google-play-link.download-link {
+      margin: 0 502px;
+   }
+}
