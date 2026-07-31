@@ -1,10 +1,20 @@
 /* Styles for Mobile devices */
 .footer {
+  background-color: var(--background-color-main);
+}
+
+.footer-wrap {
   position: relative;
   width: 100%;
   max-width: 375px;
   overflow: visible;
-  background-color: var(--background-color-main);
+  padding-top: 60px;
+  padding-bottom: 70px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--background-color-additional);
   margin: 0 auto;
 }
 
@@ -16,16 +26,6 @@
   height: 50px;
   z-index: 100;
   background-color: var(--background-color-main);
-}
-
-.footer-wrap {
-  margin-top: 60px;
-  margin-bottom: 70px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: center;
-  color: var(--background-color-additional);
 }
 
 .footer-logo {
@@ -57,8 +57,10 @@
 
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1440px) {
-  .footer {
+  .footer-wrap {
     max-width: 1440px;
+    padding-top: 100px;
+    padding-bottom: 110px;
   }
 
   .screen {
@@ -66,11 +68,6 @@
     right: 370px;
     width: 200px;
     height: 100px;
-  }
-
-  .footer-wrap {
-    margin-top: 100px;
-    margin-bottom: 110px;
   }
 
   .footer-logo {
