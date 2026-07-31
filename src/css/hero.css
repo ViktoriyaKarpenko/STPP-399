@@ -6,7 +6,7 @@
   background-size: cover;
   max-width: 375px;
   margin: 0 auto;
-  padding-top: 40px;
+  padding-top: 60px;
   padding-bottom: 40px;
 }
 @media screen and (min-width: 320px) and (min-resolution: 192dpi) {
@@ -59,7 +59,8 @@
 /* Styles for Desktop devices */
 @media screen and (min-width: 1440px) {
   .hero {
-    background-image: url('../img/hero/background_d.jpg');
+    background-image:
+      url('../img/hero/blur.png'), url('../img/hero/background_d.jpg');
     background-size: cover;
     max-width: 1440px;
     padding-top: 60px;
@@ -78,7 +79,8 @@
 }
 @media screen and (min-width: 1440px) and (min-resolution: 192dpi) {
   .hero {
-    background-image: url('../img/hero/background_d@2x.jpg');
+    background-image:
+      url('../img/hero/blur@2x.png'), url('../img/hero/background_d@2x.jpg');
     max-width: 1440px;
   }
 }

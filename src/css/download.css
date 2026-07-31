@@ -1,4 +1,29 @@
 /* Styles for Mobile devices */
+.download {
+  position: relative;
+  width: 100%;
+  max-width: 375px;
+  overflow: visible;
+  margin: 0 auto;
+}
+
+.download-octopus {
+  position: absolute;
+  bottom: -30px;
+  right: 10px;
+  width: 127px;
+  pointer-events: none;
+  z-index: 50;
+}
 /* Styles for Desktop devices */
-/*@media only screen and (min-width: 1440px) {
-}*/
+@media only screen and (min-width: 1440px) {
+  .download {
+    max-width: 1440px;
+  }
+
+  .download-octopus {
+    bottom: -65px;
+    right: 225px;
+    width: 264px;
+  }
+}
