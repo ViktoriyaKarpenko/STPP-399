@@ -11,27 +11,11 @@
   background-color: var(--background-color-header);
 }
 
-.wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  display: flex;
-  gap: 12px;
-  align-items: center;
-  font-weight: 500;
-  font-size: 28px;
-  line-height: 1.29;
-  color: var(--color-secondary);
-}
-
 .nav {
   display: none;
 }
 
-.wrapper > .google-play-link {
+.btn-play {
   display: none;
 }
 
@@ -44,6 +28,7 @@
 .burger-btn {
   fill: var(--color-icon);
   padding: 0;
+  display: block;
 }
 
 .btn-close {
@@ -119,8 +104,8 @@
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1440px) {
   .header {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 32px;
+    padding-bottom: 16px;
     max-width: 100%;
     left: 0;
     transform: none;
@@ -144,10 +129,10 @@
   }
 
   .nav-link:hover {
-    color: var(--color-gray);
+    color: var(--color-icon);
   }
 
-  .wrapper > .google-play-link {
+  .btn-play {
     display: block;
   }
 
