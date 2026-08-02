@@ -1,5 +1,210 @@
 /* Styles for Mobile devices */
+.about {
+  clip-path: inset(-9999px 0);
+  min-height: 900px;
+}
+
+.about-bg-img {
+  top: -35px;
+  left: 50%;
+  background-size: 100% 100%;
+  transform: translateX(-50%);
+  height: calc(100% + 108px);
+  background-image: url('../img/about/bg-m.png');
+  background-position: top center;
+  width: calc(100% + 40px);
+  z-index: 10;
+}
+
+.about-img3 {
+  background-image: url('../img/about/about-img3.png');
+  top: 137px;
+  left: 37%;
+  transform: translateX(-50%) rotate(-7.37deg);
+  max-width: 172px;
+  max-height: 120px;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+}
+
+.about-img2 {
+  background-image: url('../img/about/about-img2.png');
+  top: 195px;
+  left: 69%;
+  transform: translateX(-50%) rotate(17.65deg);
+  max-width: 172px;
+  max-height: 120px;
+  width: 100%;
+  height: 100%;
+  z-index: 25;
+}
+
+.about-img1 {
+  background-image: url('../img/about/about-img1.png');
+  top: 242px;
+  left: 28%;
+  transform: translateX(-50%) rotate(-8.58deg);
+  max-width: 172px;
+  max-height: 120px;
+  width: 100%;
+  height: 100%;
+  z-index: 30;
+}
+
+.about-pirate {
+  background-image: url('../img/about/about-pirate.png');
+  top: 230px;
+  left: 82%;
+  transform: translateX(-50%) rotate(-12.52deg) scale(0.6);
+  max-width: 200px;
+  max-height: 272px;
+  width: 100%;
+  height: 100%;
+  z-index: 35;
+}
+
+.palm {
+  background-image: url('../img/about/palm.png');
+  top: -180px;
+  left: -3%;
+  transform: translateX(-50%) rotate(37.17deg) scale(0.5);
+  width: 100%;
+  max-width: 388px;
+  max-height: 562px;
+  width: 100%;
+  height: 100%;
+  z-index: 40;
+}
+
+.about-bg-elem {
+  top: 0%;
+  left: 50%;
+  background-size: 100% 100%;
+  transform: translateX(-50%);
+  min-height: 100px;
+  height: 100%;
+  background-color: var(--background-color-rare);
+  background-position: top center;
+  max-width: 375px;
+  width: 100%;
+  z-index: 5;
+}
+
+.about-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 853px;
+  height: 100%;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.about-title {
+  text-align: center;
+  font-size: 28px;
+  line-height: 1.28;
+  color: var(--color-main);
+}
+
+@media screen and (min-width: 320px) and (min-resolution: 192dpi) {
+  .about-bg-img {
+    background-image: url('../img/about/bg-m@2x.png');
+  }
+
+  .about-img3 {
+    background-image: url('../img/about/about-img3@2x.png');
+  }
+
+  .about-img2 {
+    background-image: url('../img/about/about-img2@2x.png');
+  }
+
+  .about-img1 {
+    background-image: url('../img/about/about-img1@2x.png');
+  }
+
+  .about-pirate {
+    background-image: url('../img/about/about-pirate@2x.png');
+  }
+
+  .palm {
+    background-image: url('../img/about/palm@2x.png');
+  }
+}
 
 /* Styles for Desktop devices */
-/*@media only screen and (min-width: 1440px) {
-}*/
+@media only screen and (min-width: 1440px) {
+  .about {
+    min-height: 326px;
+  }
+
+  .about-bg-img {
+    background-image: url('../img/about/bg-d.png');
+    top: -70px;
+    background-size: 100% 100%;
+    height: calc(100% + 130px);
+    width: calc(100% + 80px);
+  }
+
+  .about-img3 {
+    top: 120px;
+    left: 18%;
+    max-width: 200px;
+    max-height: 140px;
+  }
+
+  .about-img2 {
+    top: 190px;
+    left: 28%;
+    max-width: 200px;
+    max-height: 140px;
+  }
+
+  .about-img1 {
+    top: 240px;
+    left: 15.5%;
+    max-width: 200px;
+    max-height: 140px;
+  }
+
+  .about-pirate {
+    top: 325px;
+    left: 27.1%;
+    transform: translateX(-50%) rotate(-12.52deg) scale(1.07);
+  }
+
+  .palm {
+    top: -175px;
+    left: 1.5%;
+    transform: translateX(-50%) rotate(37.17deg) scale(0.95);
+  }
+
+  .about-wrap {
+    max-width: 742px;
+    min-height: 326px;
+    gap: 24px;
+    margin-left: auto;
+  }
+
+  .about-tag {
+    margin: 0;
+  }
+
+  .about-title {
+    font-size: 40px;
+    line-height: 1.2;
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 1440px) and (min-resolution: 192dpi) {
+  .about-bg-img {
+    background-image: url('../img/about/bg-d@2x.png');
+  }
+}
