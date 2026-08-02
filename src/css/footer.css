@@ -21,7 +21,7 @@
 .screen {
   position: absolute;
   top: 0;
-  right: 80px;
+  right: 72px;
   width: 100px;
   height: 50px;
   z-index: 100;
@@ -65,7 +65,7 @@
 
   .screen {
     top: 0;
-    right: 370px;
+    right: 443px;
     width: 200px;
     height: 100px;
   }
