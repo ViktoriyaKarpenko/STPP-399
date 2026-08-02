@@ -1,5 +1,114 @@
 /* Styles for Mobile devices */
+.gallery-gull {
+  top: -66px;
+  right: 31%;
+  transform: translateX(-50%) rotate(13.76deg);
+  max-width: 79px;
+  max-height: auto;
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/gallery/gull.png');
+  z-index: 50;
+}
+
+.gallery-tag {
+  margin-bottom: 12px;
+}
+
+.gallery-title {
+  margin-bottom: 48px;
+}
+
+.gallery-swiper {
+  overflow: visible;
+  clip-path: inset(-9999px 0);
+  max-width: 375px;
+  width: 100%;
+}
+
+.gallery-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.gallery-item {
+  max-width: 335px;
+  width: 100%;
+}
+
+.gallery-img {
+  aspect-ratio: 320 / 400;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.gallery-swiper-wrap {
+  position: relative;
+}
+
+.gallery-nav-btn {
+  display: none;
+}
+
+@media screen and (min-width: 320px) and (min-resolution: 192dpi) {
+  .gallery-gull {
+    background-image: url('../img/gallery/gull@2x.png');
+  }
+}
 
 /* Styles for Desktop devices */
-/*@media only screen and (min-width: 1440px) {
-}*/
+@media only screen and (min-width: 1440px) {
+  .gallery-gull {
+    top: 7px;
+    right: 44%;
+    transform: translateX(-50%) rotate(0);
+    max-width: 89px;
+  }
+
+  .gallery-swiper-wrap {
+    padding: 60px 72px;
+  }
+
+  .gallery-swiper {
+    max-width: 1217px;
+    width: 100%;
+  }
+
+  .gallery-nav-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    border: none;
+    border-radius: 16px;
+    background: var(--background-color-link);
+    fill: var(--color-secondary);
+    cursor: pointer;
+    z-index: 20;
+    transition: box-shadow var(--transition-efect);
+  }
+
+  .gallery-nav-btn:hover {
+    box-shadow: var(--box-shadow-hover);
+  }
+
+  .gallery-prev {
+    left: 0;
+  }
+
+  .gallery-next {
+    right: 0;
+  }
+
+  .gallery-next svg {
+    transform: rotate(180deg);
+  }
+}

@@ -1,4 +1,186 @@
 /* Styles for Mobile devices */
+.gameplay {
+  position: relative;
+  z-index: 15;
+}
+
+.gameplay-light {
+  top: -185px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 375px;
+  max-height: auto;
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/gameplay/light-m.png');
+  background-position: top center;
+  background-size: 100% 100%;
+  z-index: 2;
+}
+
+.gameplay-pirate-two {
+  top: 0;
+  right: -18%;
+  transform: translateX(-50%);
+  max-width: 130px;
+  max-height: auto;
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/gameplay/pirate2.png');
+  z-index: 50;
+}
+
+.gameplay-tag {
+  margin-bottom: 12px;
+}
+
+.gameplay-title {
+  font-size: 28px;
+  line-height: 1.28;
+  margin: 0 auto 48px;
+}
+
+.gameplay-swiper {
+  overflow: visible;
+  clip-path: inset(-9999px 0);
+  max-width: 375px;
+  width: 100%;
+}
+
+.gameplay-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.gameplay-item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 280px;
+  border-radius: 16px;
+  background-color: var(--color-secondary);
+}
+
+.gameplay-img {
+  aspect-ratio: 280 / 160;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-bottom: 18px;
+}
+
+.gameplay-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  height: 120px;
+  font-size: 16px;
+  padding: 18px 0;
+}
+
+.gameplay-subtitle {
+  font-weight: 600;
+  line-height: 1.25;
+  font-size: min(5.7cqw, 16px);
+  white-space: nowrap;
+}
+
+.gameplay-text {
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.gameplay-wrap-desc {
+  display: none;
+}
+
+@media screen and (min-width: 320px) and (min-resolution: 192dpi) {
+  .gameplay-light {
+    background-image: url('../img/gameplay/light-m@2x.png');
+  }
+
+  .gameplay-pirate-two {
+    background-image: url('../img/gameplay/pirate2@2x.png');
+  }
+}
+
 /* Styles for Desktop devices */
-/*@media only screen and (min-width: 1440px) {
-}*/
+@media only screen and (min-width: 1440px) {
+  .gameplay-light {
+    background-image: url('../img/gameplay/light-d.png');
+    top: -190px;
+    max-width: 1440px;
+  }
+
+  .gameplay-pirate-two {
+    top: -7px;
+    right: -11%;
+    max-width: 365px;
+  }
+
+  .gameplay-bubbles {
+    top: -65px;
+    right: 25%;
+    transform: translateX(-50%);
+    max-width: 33px;
+    max-height: auto;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/gameplay/bubbles.png');
+    z-index: 50;
+  }
+
+  .gameplay-octopus-two {
+    top: 380px;
+    right: 21%;
+    transform: translateX(-50%);
+    max-width: 304px;
+    max-height: auto;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/gameplay/octopus2.png');
+    z-index: 30;
+  }
+
+  .gameplay-title {
+    font-size: 40px;
+    line-height: 1.2;
+  }
+
+  .gameplay-swiper {
+    display: none;
+  }
+
+  .gameplay-wrap-desc {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    align-items: center;
+  }
+
+  .gameplay-desc-list {
+    display: flex;
+    gap: 48px;
+  }
+
+  .index {
+    position: relative;
+    z-index: 40;
+  }
+}
+
+@media screen and (min-width: 1440px) and (min-resolution: 192dpi) {
+  .gameplay-light {
+    background-image: url('../img/gameplay/light-d@2x.png');
+  }
+
+  .gameplay-bubbles {
+    background-image: url('../img/gameplay/bubbles@2x.png');
+  }
+
+  .gameplay-octopus-two {
+    background-image: url('../img/gameplay/octopus2@2x.png');
+  }
+}

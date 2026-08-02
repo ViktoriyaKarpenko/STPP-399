@@ -1,5 +1,111 @@
-<section class="section gallery" id="gallery">
+<section class="section section-bg" id="gallery">
+  <div class="section-bg-img gallery-gull"></div>
   <div class="container">
-    <p class="section-tag">Gallery</p>
+    <p class="section-tag gallery-tag">Gallery</p>
+    <h2 class="section-title gallery-title">Visual Style</h2>
+    <div class="gallery-swiper-wrap">
+      <button
+        class="gallery-nav-btn gallery-prev"
+        type="button"
+        data-gallery-prev
+        aria-label="Previous slide"
+      >
+        <svg width="16" height="16">
+          <use href="./img/sprite.svg#icon-swiper"></use>
+        </svg>
+      </button>
+      <div class="gallery-swiper swiper" data-gallery-swiper>
+        <ul class="swiper-wrapper gallery-list">
+          <li class="swiper-slide gallery-item">
+            <img
+              class="gallery-img"
+              src="./img/gallery/gallery-img1.jpg"
+              srcset="
+                ../img/gallery/gallery-img1.jpg    1x,
+                ../img/gallery/gallery-img1@2x.jpg 2x
+              "
+              alt="two pirates on a ship"
+              width="320"
+              height="400"
+            />
+          </li>
+          <li class="swiper-slide gallery-item">
+            <img
+              class="gallery-img"
+              src="./img/gallery/gallery-img2.jpg"
+              srcset="
+                ../img/gallery/gallery-img2.jpg    1x,
+                ../img/gallery/gallery-img2@2x.jpg 2x
+              "
+              alt="a pirate and a seagull"
+              width="320"
+              height="400"
+            />
+          </li>
+          <li class="swiper-slide gallery-item">
+            <img
+              class="gallery-img"
+              src="./img/gallery/gallery-img3.jpg"
+              srcset="
+                ../img/gallery/gallery-img3.jpg    1x,
+                ../img/gallery/gallery-img3@2x.jpg 2x
+              "
+              alt="a pirate with an octopus"
+              width="320"
+              height="400"
+            />
+          </li>
+          <li class="swiper-slide gallery-item">
+            <img
+              class="gallery-img"
+              src="./img/gallery/gallery-img4.jpg"
+              srcset="
+                ../img/gallery/gallery-img4.jpg    1x,
+                ../img/gallery/gallery-img4@2x.jpg 2x
+              "
+              alt="images of game levels"
+              width="320"
+              height="400"
+            />
+          </li>
+          <li class="swiper-slide gallery-item">
+            <img
+              class="gallery-img"
+              src="./img/gallery/gallery-img5.jpg"
+              srcset="
+                ../img/gallery/gallery-img5.jpg    1x,
+                ../img/gallery/gallery-img5@2x.jpg 2x
+              "
+              alt="a pirate with a shovel and an octopus"
+              width="320"
+              height="400"
+            />
+          </li>
+          <li class="swiper-slide gallery-item">
+            <img
+              class="gallery-img"
+              src="./img/gallery/gallery-img6.jpg"
+              srcset="
+                ../img/gallery/gallery-img6.jpg    1x,
+                ../img/gallery/gallery-img6@2x.jpg 2x
+              "
+              alt="a pirate is sailing on the sea"
+              width="320"
+              height="400"
+            />
+          </li>
+        </ul>
+      </div>
+      <button
+        class="gallery-nav-btn gallery-next"
+        type="button"
+        data-gallery-next
+        aria-label="Next slide"
+      >
+        <svg width="16" height="16">
+          <use href="./img/sprite.svg#icon-swiper"></use>
+        </svg>
+      </button>
+    </div>
   </div>
 </section>
