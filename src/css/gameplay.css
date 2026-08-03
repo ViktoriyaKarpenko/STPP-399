@@ -2,6 +2,7 @@
 .gameplay {
   position: relative;
   z-index: 15;
+  clip-path: inset(-9999px 0);
 }
 
 .gameplay-light {

@@ -14,11 +14,20 @@
   --tracking: 0.05em;
 }
 
-html {
+html,
+body {
+  max-width: 100%;
   overflow-x: hidden;
+  position: relative;
+}
+
+html {
   scroll-behavior: smooth;
   scroll-padding-top: 124px;
-  scrollbar-gutter: stable;
+}
+
+html:has(body[data-scroll='locked']) {
+  overflow: hidden;
 }
 
 body {
@@ -34,9 +43,14 @@ body {
 
 body[data-scroll='locked'] {
   overflow: hidden;
+  touch-action: none;
+  overscroll-behavior: none;
+  padding-right: var(--scrollbar-width, 0px);
 }
 
 main {
+  width: 100%;
+  overflow-x: clip;
   flex-grow: 1;
   padding-top: 124px;
 }

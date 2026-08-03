@@ -11,6 +11,11 @@
   z-index: 50;
 }
 
+.gallery {
+  clip-path: inset(-9999px 0);
+  z-index: 10;
+}
+
 .gallery-tag {
   margin-bottom: 12px;
 }
@@ -20,7 +25,7 @@
 }
 
 .gallery-swiper {
-  overflow: visible;
+  overflow: hidden;
   clip-path: inset(-9999px 0);
   max-width: 375px;
   width: 100%;
