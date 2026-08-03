@@ -2,13 +2,19 @@
 .header {
   position: fixed;
   z-index: 800;
-  padding-top: 60px;
-  padding-bottom: 20px;
-  width: 100%;
-  min-width: 375px;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 0;
+  left: 0;
+  width: calc(100% - var(--scrollbar-width, 0px));
   background-color: var(--background-color-header);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 60px 20px 20px;
 }
 
 .nav {
@@ -105,11 +111,12 @@
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1440px) {
   .header {
-    padding-top: 32px;
-    padding-bottom: 16px;
-    max-width: 100%;
-    left: 0;
     transform: none;
+  }
+
+  .wrapper {
+    max-width: 1440px;
+    padding: 38px 120px 16px;
   }
 
   .nav {
