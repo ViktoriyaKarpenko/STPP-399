@@ -24,8 +24,6 @@ html {
 body {
   font-family: 'Quicksand', sans-serif;
   background-color: var(--background-color-main);
-  display: flex;
-  flex-direction: column;
   min-height: 100vh;
   margin: 0;
   font-weight: 500;
