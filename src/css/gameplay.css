@@ -5,7 +5,7 @@
 }
 
 .gameplay-light {
-  top: -185px;
+  top: -150px;
   left: 50%;
   transform: translateX(-50%);
   max-width: 375px;
@@ -16,6 +16,7 @@
   background-position: top center;
   background-size: 100% 100%;
   z-index: 2;
+  filter: blur(50px);
 }
 
 .gameplay-pirate-two {
