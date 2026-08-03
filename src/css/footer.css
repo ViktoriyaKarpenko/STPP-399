@@ -1,57 +1,19 @@
 /* Styles for Mobile devices */
 .footer {
-  position: relative;
-  width: 100%;
-  max-width: 375px;
-  overflow: visible;
+  background-color: var(--background-color-main);
+}
+
+.footer-wrap {
   padding-top: 60px;
   padding-bottom: 70px;
+  max-width: 335px;
+  width: 100%;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
   color: var(--background-color-additional);
-  background-color: var(--background-color-main);
   margin: 0 auto;
-  z-index: 10;
-  clip-path: inset(-9999px 0);
-}
-
-.octopus {
-  background-image: url('../img/download/octopus.png');
-  position: absolute;
-  top: -35%;
-  right: -16%;
-  transform: translateX(-50%) scale(0.95);
-  background-position: top center;
-  background-size: 100% 100%;
-  max-width: 127px;
-  max-height: 133px;
-  width: 100%;
-  height: 100%;
-  z-index: 50;
-}
-
-.screen {
-  position: absolute;
-  top: 0;
-  right: 19.5%;
-  width: 100px;
-  height: 50px;
-  z-index: 100;
-  background-color: var(--background-color-main);
-}
-
-@media only screen and (max-width: 375px) {
-  .octopus {
-    top: -31%;
-    right: -26%;
-    transform: translateX(-50%) scale(0.8);
-  }
-
-  .screen {
-    right: 17.5%;
-  }
 }
 
 .footer-logo {
@@ -81,33 +43,12 @@
   font-family: 'Quicksand', sans-serif;
 }
 
-@media screen and (min-width: 320px) and (min-resolution: 192dpi) {
-  .octopus {
-    background-image: url('../img/download/octopus@2x.png');
-  }
-}
-
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1440px) {
-  .footer {
+  .footer-wrap {
     max-width: 1440px;
     padding-top: 100px;
     padding-bottom: 110px;
-  }
-
-  .octopus {
-    top: -61%;
-    right: 13%;
-    transform: translateX(-50%) scale(0.95);
-    max-width: 264px;
-    max-height: 282px;
-  }
-
-  .screen {
-    top: 0;
-    right: 32%;
-    width: 200px;
-    height: 100px;
   }
 
   .footer-logo {

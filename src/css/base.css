@@ -99,9 +99,11 @@ a {
 .logo {
   display: flex;
   gap: 12px;
+  max-width: 221px;
+  width: 100%;
   align-items: center;
   font-weight: 500;
-  font-size: clamp(20px, 6vw, 28px);
+  font-size: 28px;
   line-height: 1.29;
   color: var(--color-secondary);
 }
