@@ -1,0 +1,57 @@
+/* Styles for Mobile devices */
+.decor {
+  clip-path: inset(-9999px 0);
+  height: 1px;
+}
+
+.coral-left {
+  top: -280px;
+  left: 0;
+  background-size: 100% 100%;
+  min-height: 1882px;
+  height: calc(100% + 100px);
+  background-image: url('../img/background-img/corals-left.png');
+  background-position: top center;
+  max-width: 308px;
+  width: 100%;
+  z-index: -1;
+}
+
+@media only screen and (max-width: 375px) {
+  .coral-left {
+    top: -120px;
+  }
+}
+
+@media screen and (min-width: 320px) and (min-resolution: 192dpi) {
+  .coral-left {
+    background-image: url('../img/background-img/corals-left@2x.png');
+  }
+}
+
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1440px) {
+  .coral-left {
+    top: -1300px;
+    min-height: 2484px;
+    max-width: 407px;
+  }
+
+  .coral-right {
+    top: -1170px;
+    right: 0;
+    background-size: 100% 100%;
+    min-height: 2294px;
+    background-image: url('../img/background-img/corals-right.png');
+    background-position: top center;
+    max-width: 507px;
+    width: 100%;
+    z-index: -1;
+  }
+}
+
+@media screen and (min-width: 1440px) and (min-resolution: 192dpi) {
+  .coral-right {
+    background-image: url('../img/background-img/corals-right@2x.png');
+  }
+}
