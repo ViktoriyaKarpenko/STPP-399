@@ -16,7 +16,6 @@
   background-position: top center;
   background-size: 100% 100%;
   z-index: 2;
-  filter: blur(200px);
 }
 
 .gameplay-pirate-two {
@@ -102,11 +101,13 @@
   display: none;
 }
 
-@media screen and (min-width: 320px) and (min-resolution: 192dpi) {
+@media screen and (min-width: 320px) and (max-width: 1439px) and (min-resolution: 192dpi) {
   .gameplay-light {
     background-image: url('../img/gameplay/light-m@2x.png');
   }
+}
 
+@media screen and (min-width: 320px) and (min-resolution: 192dpi) {
   .gameplay-pirate-two {
     background-image: url('../img/gameplay/pirate2@2x.png');
   }
@@ -118,7 +119,7 @@
     background-image: url('../img/gameplay/light-d.png');
     top: -190px;
     max-width: 1440px;
-    filter: blur(500px);
+    filter: blur(200px);
   }
 
   .gameplay-pirate-two {
