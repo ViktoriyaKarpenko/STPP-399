@@ -21,11 +21,17 @@
 .screen {
   position: absolute;
   top: 0;
-  right: 72px;
+  right: 19.5%;
   width: 100px;
   height: 50px;
   z-index: 100;
   background-color: var(--background-color-main);
+}
+
+@media only screen and (max-width: 375px) {
+  .screen {
+    right: 15%;
+  }
 }
 
 .footer-logo {
@@ -65,7 +71,7 @@
 
   .screen {
     top: 0;
-    right: 443px;
+    right: 30.8%;
     width: 200px;
     height: 100px;
   }
